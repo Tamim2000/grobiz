@@ -1,0 +1,62 @@
+/*****Teatimonial section****/ 
+.testimonial{
+    .single-testimonial{
+        p,span{
+            color:$pheragraph;
+            font-weight: 500;
+        }
+    }
+    .testimonial-img{
+        text-align: right;
+    .main-img{
+        width: 75%;
+    }
+    .man{
+        box-shadow: 0px 0px 40px #c1c1c1;
+        border-radius: 50% 50% 50% 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 260px;
+        animation: man-animate 5s linear infinite;
+    }
+    .quto{
+        position: absolute;
+        top: 45px;
+        right: 0;
+        color: $them;
+        font-size:80px;
+    }
+}
+
+ button.slick-arrow {
+    position: absolute;
+    bottom:-60px;
+    left: 0;
+    background: rgba(221, 221, 221, 0.459);
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(139, 139, 139);
+    border-radius: 50%;
+    &:hover{
+        background: $them;
+        color: $white;
+    }
+ }
+ button.slick-next.slick-arrow {
+    left: 70px;
+ }
+}
+@keyframes man-animate{
+    0%{
+        transform: scaleY(0px);
+    }
+    50%{
+        transform: translateY(120px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

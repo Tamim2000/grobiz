@@ -1,0 +1,95 @@
+/* Laptops device */
+/* --------------- */
+@media(min-width: 1200px) and (max-width: 1500px){
+    
+}
+
+/* Normal desktop device */
+/* --------------------------- */
+@media (max-width:1200px){
+    .header-top .social-link {
+        background:transparent;
+        padding: 16px 0px;
+    }
+    .header-top .social-link::after {
+        display: none;
+    }
+    .header-main .contact {
+        display: none !important;
+    }
+    .header-main .nav-wrapper {
+        justify-content:flex-end;
+    }
+}
+/* tablet or medium device */
+/* ------------------------------- */
+@media (max-width:992px){
+    img.logo {
+        width: 150px;
+    }
+    .header-top ul {
+        display: none;
+    }
+    .header-top .social-link {
+        text-align: center;
+    }
+    .toggle-btn {
+        display: inline-block !important;
+    }
+    ul.main-menu {
+        border-top: 3px solid #8500d1;
+        margin-top: 2px;
+        top: 39px;
+        background:#040021;
+        z-index: 9;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+    }
+        .header-main .main-menu li {
+            display: block;
+            border-bottom: 1px solid #8500d1;
+            position: relative;
+        }
+        .header-main .main-menu li .sub-menu{
+            left: -18px;
+        } 
+        .header-main .main-menu a {
+        padding: 5px 0px;
+        }
+        .header-main .main-menu a::after{
+            display: none;
+        }
+        .fixed ul.main-menu {
+            background: #fff;
+        }
+        .fixed ul.main-menu a{
+           color: #040021;
+        }
+        .single-slider h1 {
+            margin: 20px auto;
+            font-size: 36px;
+            font-weight: 700;
+            width: 80%;
+        }
+}
+
+/* small or mobile device 320px */
+/* ------------------------------- */
+@media (max-width:768px) {
+    .section-title-side h2 {
+        font-size: 26px;
+    }
+    .about-area button{
+        margin-left: 10px;
+    }
+    .footer-bottom ul {
+        display: none;
+    }
+}
+
+/* Large mobile */
+@media (max-width:480px){
+ 
+}

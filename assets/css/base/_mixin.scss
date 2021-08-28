@@ -1,0 +1,55 @@
+
+@mixin social-link{
+    color: $white;
+    background: #8500d1;
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    border: 1px solid $white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    &:hover{
+        background: $white;
+        color: $them;
+    }
+}
+@mixin btn{
+        overflow: hidden;
+        position: relative;
+        background:$them;
+        padding: 6px 20px;
+        border-radius: 10px;
+        border: none;
+        transition: .3s;
+        a{
+            position: relative;
+            font-size: 20px;
+            font-weight: 500;
+            z-index: 9;
+            color: $white;
+        }
+        &::after{
+            top: -170px;
+            left: -19px;
+            z-index: 1;
+            content: '';
+            position: absolute;
+            transform: rotate(
+        45deg
+        ) translateX(0px);
+            height: 450%;
+            width: 15%;
+            background: #b9b3c3a3;
+            transition: .5s;
+        }
+        &:hover::after{
+            transform: rotate(
+                45deg
+                )translateX(230px);
+        }
+        &:hover{
+            background: $bg-hover;
+        }
+}

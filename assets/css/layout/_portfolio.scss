@@ -1,0 +1,105 @@
+/******portfolio section*****/ 
+.portfolio{
+    .single-portfolio{
+        border-radius: 10px;
+        overflow: hidden;
+        &:hover .hover-inner{
+            top: 0;
+            opacity: 1;
+        }
+    }   img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      .hover-inner{
+          transition: .5s;
+          position: absolute;
+          opacity: 0;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 100%;
+          padding: 0px 40px;
+          text-align: center;
+          flex-flow: column;
+          background: rgba(84, 10, 144, 0.705);
+          a i{
+              font-size: 40px;
+              margin-bottom: 30px;
+              color: $white;
+              &:hover{
+                  color: $black;
+              }
+          }
+          h5{
+              color: $white;
+              position: relative;
+              display: inline-block;
+              padding-bottom: 10px;
+              &::after{
+                position: absolute;
+                left: 25%;
+                bottom: 0;
+                content: '';
+                height: 3px;
+                width: 70px;
+                background: $white;
+
+              }
+              &:hover{
+                  color: $black;
+              }
+          }
+          p{
+              color: $white;
+          }
+      }
+      .nav-tabs{
+          border: none;
+          justify-content: center;
+          .nav-link{
+              margin: 0 10px;
+              border-radius: 5px;
+              background: transparent;
+              border: none;
+              color: $pheragraph;
+              text-transform: capitalize;
+              font-weight: 600;
+              position: relative;
+              &::after{
+                position: absolute;
+                left: 55%;
+                bottom: -15px;
+                background: $them;
+                content: '';
+                height: 40px;
+                width: 50px;
+                clip-path: polygon(60% 52%, 21% 53%, 42% 92%);
+                transform: translate(-50%, 0);
+                visibility: hidden;
+                opacity: 0;
+              }
+              &:hover{
+                color: #fff;
+                background: $them;
+              }
+              &:hover::after{
+                  visibility: visible;
+                  opacity: 1;
+              }
+          }
+          .nav-link.active{
+              border-radius: 5px;
+              color: #fff;
+              background: $them;
+          }
+          .nav-link.active::after{
+              visibility: visible;
+              opacity: 1;
+          }
+      }
+      button.btn{
+          @include btn();
+          margin-top: 70px;
+      }
+}

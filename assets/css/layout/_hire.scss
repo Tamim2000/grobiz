@@ -1,0 +1,12 @@
+/****Hire section start*****/ 
+.hire{
+    h2{
+        color: $white;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    button{
+        @include btn();
+    }
+}

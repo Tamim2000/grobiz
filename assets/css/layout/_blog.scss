@@ -1,0 +1,54 @@
+/*******Blog section *******/ 
+.blog-area{
+    .single-blog{
+        border-radius: 5px;
+        padding: 10px;
+        &:hover img{
+            transform: scale(1.5);
+        }
+        &:hover{
+            box-shadow: 0px 0px 16px #80808040;
+        }
+        .img-wrapper{
+            overflow: hidden;
+        }
+        h2{
+            color: gray;
+            font-size: 24px;
+            margin: 25px 0px;
+            &:hover{
+                color: $them;
+            }
+        }
+        a{
+            font-size: 18px;
+            color: $them;
+        }
+    }
+    .blog-update {
+        padding: 10px  0px;
+        display: flex;
+        .comments{
+            margin-left: 20px;
+            span{
+                color: gray;
+                font-weight: 700;
+                display: block;
+            }
+        }
+        h4{
+           z-index: 99;
+            border-radius: 5px;
+            background: $them;
+            color: $white;
+            width: 85px;
+            padding: 10px 5px;
+            margin: -25px 2px 2px 17px;
+        
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+
+}

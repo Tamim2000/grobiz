@@ -1,0 +1,21 @@
+/******Counter section*****/ 
+.counter-area{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+    i{
+        font-size: 60px;
+    }
+    h2{
+        font-size:48px;
+        font-weight: 900;
+        margin: 15px 0px;
+        span{
+            font-weight: 900;
+        }
+    }
+    span{
+        font-weight: 500;
+    }
+}
